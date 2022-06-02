@@ -1,0 +1,99 @@
+{
+  "main": {
+    "id": "34b724ac787d9d78",
+    "type": "split",
+    "children": [
+      {
+        "id": "8f9dbbad9baeaf6d",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Containers.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f26b4b93ddd40120",
+    "type": "split",
+    "children": [
+      {
+        "id": "72f3ee0fa6103be4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a7955c5a43f200b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b5c1e45ad37e299a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "19da6f37bc8e19a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a04b8a237f97708",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e0d3f4be2b9418b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Containers.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "8f9dbbad9baeaf6d",
+  "lastOpenFiles": [
+    "Containers.md",
+    "Containers 1.md",
+    "Pasted image 20220601233748.png",
+    "Pasted image 20220601233753.png.md",
+    "Pasted image 20220601233753.png",
+    "Assembly Project.md"
+  ]
+}
