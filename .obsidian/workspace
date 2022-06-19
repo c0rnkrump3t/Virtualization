@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "5. Debugging with GDB.md",
+            "file": "Instructions.md",
             "mode": "source",
             "source": false
           }
@@ -49,12 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 294
   },
   "right": {
     "id": "19da6f37bc8e19a9",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "5. Debugging with GDB.md",
+                "file": "Instructions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,15 +89,15 @@
   },
   "active": "131ea89692f8a791",
   "lastOpenFiles": [
-    "5. Debugging with GDB.md",
-    "4. GNU Debbugging.md",
     "Instructions.md",
+    "5. Debugging with GDB.md",
+    "Untitled.md",
+    "4. GNU Debbugging.md",
     "2. Assembly File Structure.md",
     "1. How to install NASM on Fedora using dnf.md",
     "3. Assembling and Disassembling.md",
     "Intro_to_Virtualization/Linux.md",
     "Intro_to_Virtualization/Containers.md",
-    "Pasted image 20220614213341.png",
-    "Intro_to_Virtualization/README.md"
+    "Pasted image 20220614213341.png"
   ]
 }

@@ -83,16 +83,50 @@ someuser:
 I was not able to find the file by following the file structure listed on their getting started page. Instead I executed this command to find it:
 
 ```bash
+find / -name "maya" 2>/dev/null
+grep -ir "maya" ./
+
+##I personally used this actually lol
+cd Project/myproject/target/yamcs/yamcs-data/_global.rdb/ 
 
 ```
 
 Finally, I was able to modify the file by using `nano` and entering the hashes there.
 
 ```bash
-
+nano 000014.log       
 ```
 
+```bash 
+##file contents
+`D0i^S^A^A^O^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^A^H^G^R�^A^H^F^R^Eadmin^Z
+Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
+^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R9^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^H�>
+^Gm@m.com^X^@^B�o#^[^@^A^P^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E�T^F�|^A^A^Q^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
+Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
+^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
+^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@���l^[^@^A^R^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E^E�U�^V^@^A^S^@^@^@^@^@^@^@^A^@^@^@^E^A^A^A^E^B^@^@^@^F^U�^{%^@^A^T^@^@^@^@^@^@^@^A^@^@^@^E^A^F^B^A^@^@^@^F^O^H^F^P^A"      audit_log)J^\��^@^A>
+^N
+^Dname^R^F^Z^Dmaya
+^U
+^KdisplayName^R^F^Z^Dmaya
+^R
+^Eemail^R       ^Z^Gm@m.com
+^Q
+^Hpassword^R^E^Z^C***�����5���^A^A^V^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
+Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
+^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
+^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@Y�R:^[^@^A^W^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E^O��g�^A^A^X^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
+Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
+^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
+^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@�|��^[^@^A^Y^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E
 
+
+```
 ## Troubleshooting:
 
 ### OPI Missing:
