@@ -14,7 +14,7 @@
 
 ```bash
 
-
+check the GUI readme
 ```
 
 
@@ -27,7 +27,7 @@ cd myproject
 mvn yamcs:run
 ```
 
-Once the server is up and running, checck the terminal for a line that looks like this:
+Once the server is up and running, check the terminal for a line that looks like this:
 
 ![[Pasted image 20220615223348.png]]
 (*Note: You can always use `ctrl+f` on the `termianl` to find something in this case `8090`*)
@@ -80,13 +80,14 @@ someuser:
   roles: [ Operator ]
 ```
 
-I was not able to find the file by following the file structure listed on their getting started page. Instead I executed this command to find it:
+I was not able to find the file by following the file structure listed on their getting started page. Instead I went to this path:
 
 ```bash
-find / -name "maya" 2>/dev/null
-grep -ir "maya" ./
+##The following two commands didn't find the required directory 
+##find / -name "maya" 2>/dev/null
+##grep -ir "maya" ./
 
-##I personally used this actually lol
+##I personally used this 
 cd Project/myproject/target/yamcs/yamcs-data/_global.rdb/ 
 
 ```
@@ -94,39 +95,35 @@ cd Project/myproject/target/yamcs/yamcs-data/_global.rdb/
 Finally, I was able to modify the file by using `nano` and entering the hashes there.
 
 ```bash
-nano 000014.log       
+nano 000024.log       
 ```
 
 ```bash 
-##file contents
-`D0i^S^A^A^O^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^A^H^G^R�^A^H^F^R^Eadmin^Z
+##log file contents with the hashes
+?b�^N8^B^A"^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^D^H^H^R�^A^H^F^R^Eadmin^Z
 Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
-^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R9^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^H�>
-^Gm@m.com^X^@^B�o#^[^@^A^P^@^@^@^@^@^@^@^A^@^@^@^A
-^@^@^@^Cgroups^B^H^E�T^F�|^A^A^Q^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
+^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^H�ú�^F^P���#:^K^H�>
+^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@^R�^A^H^H^R^Dtest ^@(^B2^L^H�˿�^F^P����^AR�^A
+$c1980336-6f5a-4223-b1e6-74b1be55d79a^Rf1000:1ffb836ad43076a3696de057709075540327de3b4a692a41:d7e8fbd4c609b8bcb5c34737122182599dea56c9a4af609a�^[��^[^@^A#^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E���U8^B^A$^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^D^H^H^R�^A^H^F^R^Eadmin^Z
 Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
-^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
-^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@���l^[^@^A^R^@^@^@^@^@^@^@^A^@^@^@^A
-^@^@^@^Cgroups^B^H^E^E�U�^V^@^A^S^@^@^@^@^@^@^@^A^@^@^@^E^A^A^A^E^B^@^@^@^F^U�^{%^@^A^T^@^@^@^@^@^@^@^A^@^@^@^E^A^F^B^A^@^@^@^F^O^H^F^P^A"      audit_log)J^\��^@^A>
-^N
-^Dname^R^F^Z^Dmaya
-^U
-^KdisplayName^R^F^Z^Dmaya
-^R
-^Eemail^R       ^Z^Gm@m.com
+^Qadmin@example.com^Rf1000:a17bb8b41f949131ddebe35f5cc06bce555bd55bfbc8bfdb:563a7f135037a9471030318d59155a7bb6cb7e9fd8644f82^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^H�ú�^F^P���#:^K^H�>
+^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@^R�^A^H^H^R^Dtest ^@(^B2^L^H�˿�^F^P����^AR�^A
+$c1980336-6f5a-4223-b1e6-74b1be55d79a^Rf1000:1ffb836ad43076a3696de057709075540327de3b4a692a41:d7e8fbd4c609b8bcb5c34737122182599dea56c9a4af609a����^[^@^A%^@^@^@^@^@^@^@^A^@^@^@^A
+^@^@^@^Cgroups^B^H^E��<��^@^A&^@^@^@^@^@^@^@^A^@^@^@^A^P^@^@^@^F�^@^A�^??X��^@^@^@q^F^@^@^AIamApi^@^F^@^@^BUpdateUser^@^F^@^@^@guest^@^F^@^@^CUser 'admin' was changed^@^L^@^@^D^@^@^>
+^O
+^Dname^R^G^Z^Eadmin
 ^Q
-^Hpassword^R^E^Z^C***�����5���^A^A^V^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
-Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
-^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
-^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@Y�R:^[^@^A^W^@^@^@^@^@^@^@^A^@^@^@^A
-^@^@^@^Cgroups^B^H^E^O��g�^A^A^X^@^@^@^@^@^@^@^A^@^@^@^A^L^@^@^@^Caccounts�^B^H^G^R�^A^H^F^R^Eadmin^Z
-Administrator ^A(^A2^L^H建�^F^P����^A:^L^H建�^F^P����^AJ}
-^Qadmin@example.com^Rf1000:6fd31d19e45f6907adba749d0531c866fcee3078e81f412e:5f7269adb4c94f67811ea6c2d9d8cecf5d19976c99e33102^X^A^R�^A^H^G^R^Dmaya^Z^Dmaya ^A(^B2^K^>
-^Gm@m.com^Rf1000:d2a3665132b342417567b376bd9f611e87b440d5f7cef165:3a2166b219095b234487dc0ce735f4ccb7b59fd2177e7f7b^X^@�|��^[^@^A^Y^@^@^@^@^@^@^@^A^@^@^@^A
-^@^@^@^Cgroups^B^H^E
+^Hpassword^R^E^Z^C***����
+
+
 
 
 ```
+
+The next step would be using this [link](https://docs.yamcs.org/javadoc/yamcs/latest/org/yamcs/security/PBKDF2PasswordHasher.html) to verify is a password is correct and figuring out how to hash passwords using ```yamcsadmin password-hash ```
+
+
 ## Troubleshooting:
 
 ### OPI Missing:
@@ -142,4 +139,6 @@ The error exists because the software has yet to run and locate it's other "base
 
 
 ### No Password Provided:
-For this error, I was able to fix it by pressing the "Test Connection" button before storing the password. This seems like a small bug.
+For this error, I was able to fix it by pressing the "Test Connection" button before storing the password. This seems like a small bug. If it still dowsn't work, I reinstalled the repo. 
+You may also have some luck using the directions in the following link
+[here](https://docs.yamcs.org/python-yamcs-client/general/ "https://docs.yamcs.org/python-yamcs-client/general/").
